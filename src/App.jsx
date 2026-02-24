@@ -6,10 +6,13 @@ import Builder from './pages/Builder';
 import Cart from './pages/Cart';
 import { CartProvider } from './context/CartContext';
 
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
 function App() {
   return (
     <CartProvider>
       <Router>
+        <SpeedInsights />
         <div className="app-wrapper">
           <Navbar />
           <main className="main-content">
