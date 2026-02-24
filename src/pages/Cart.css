@@ -1,0 +1,182 @@
+.cart-layout {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .cart-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.cart-item {
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.cart-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.item-title {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.badge-small {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+}
+
+.bg-primary-light {
+    background-color: var(--primary);
+    color: white;
+}
+
+.item-breakdown {
+    list-style-type: none;
+    font-size: 0.9rem;
+    margin-top: 0.75rem;
+}
+
+.item-breakdown li {
+    margin-bottom: 0.25rem;
+}
+
+.item-price {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+}
+
+.btn-text {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    padding: 0;
+}
+
+.btn-danger {
+    color: #ef4444;
+}
+
+.btn-danger:hover {
+    color: #b91c1c;
+}
+
+/* Sidebar & Forms */
+.summary-card {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.top-24 {
+    top: 6rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid #e2e8f0;
+    background-color: var(--bg-white);
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(255, 183, 178, 0.2);
+}
+
+.w-full {
+    width: 100%;
+}
+
+.ml-2 {
+    margin-left: 0.5rem;
+}
+
+.text-primary-dark {
+    color: var(--primary-dark);
+}
+
+.success-icon {
+    animation: bounceIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Utilities */
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+.pb-4 {
+    padding-bottom: 1rem;
+}
+
+.pb-2 {
+    padding-bottom: 0.5rem;
+}
+
+.pt-2 {
+    padding-top: 0.5rem;
+}
+
+.border-b {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.text-light {
+    color: var(--text-light);
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+}
