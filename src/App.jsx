@@ -7,12 +7,14 @@ import Cart from './pages/Cart';
 import { CartProvider } from './context/CartContext';
 
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
     <CartProvider>
       <Router>
         <SpeedInsights />
+        <Analytics />
         <div className="app-wrapper">
           <Navbar />
           <main className="main-content">
